@@ -1,13 +1,16 @@
+import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
+import About from "./Components/About";
+// import Contact from "./Components/Contact";
 
-import './App.css'
-
-function App() {
-
-  return (
-    <>
-      <h1 className="text-4xl text-blue-600 font-bold">Hello Tailwind!</h1>
-    </>
-  )
+export default function App() {
+    return (
+        <>
+            <Navbar/>
+            <Header />
+            {/* <Contact /> */}
+            <About/>
+            
+        </>
+    )
 }
-
-export default App
