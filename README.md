@@ -1,16 +1,57 @@
-# React + Vite
+# 🌐 Portfolio – Housna Fathi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio professionnel développé avec **React.js, Vite et Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Sections du portfolio
 
-## React Compiler
+### 🏠 Section Hero
+- Présentation rapide
+- Titre professionnel (Développeuse Full-Stack)
+- Bouton d’appel à l’action
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👩‍💻 Section À propos
+- Résumé professionnel
+- Présentation de mon profil
+- Objectif de carrière
 
-## Expanding the ESLint configuration
+### 🚀 Section Projets
+- Liste de projets réalisés
+- Description courte pour chaque projet
+- Cartes responsives et design moderne
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📞 Section Contact
+- Adresse email
+- Liens vers LinkedIn et GitHub
+
+### 📄 Footer
+- Copyright
+- Liens vers mes réseaux professionnels
+
+---
+
+## ⚙️ Structure technique
+
+Le projet est basé sur une architecture modulaire avec des composants React :
+
+- Navbar.jsx
+- Hero.jsx
+- About.jsx
+- Projects.jsx
+- Contact.jsx
+- Footer.jsx
+
+Chaque section est développée sous forme de composant réutilisable afin d’assurer une bonne organisation, maintenabilité et évolutivité du code.
+
+---
+
+## 🎯 Objectif du projet
+
+Le but principal de ce portfolio est de **mettre en avant mes projets réalisés** afin que les recruteurs puissent rapidement voir mes compétences techniques et mon expérience pratique. Il présente également mon approche du développement web moderne, responsive et professionnel.
+
+---
+
+## 👩‍💻 Réalisé par
+
+- **HOUSNA FATHI** – Développeuse web full-stack  
