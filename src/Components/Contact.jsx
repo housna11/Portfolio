@@ -5,37 +5,37 @@ export default function Contact() {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending...");
+    setResult("sending");
 
-    const formData = new FormData(event.target);
-
-    // إذا كنتِ تستعملي Web3Forms حطي access_key ديالك هنا
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
-
-    // مثال بسيط (محاكاة نجاح الإرسال)
-    const res = {
-      success: true,
-      message: "Message sent successfully",
-    };
-
-    if (res.success) {
-      setResult(res.message);
+    setTimeout(() => {
+      setResult("success");
       event.target.reset();
-    } else {
-      setResult("Something went wrong");
-    }
+
+      setTimeout(() => setResult(""), 3000);
+    }, 1000);
   };
 
   return (
-    <div
-      id="contact"
-      className="w-full px-[12%] py-10 scroll-mt-20"
-    >
+    <div id="contact" className="w-full px-[12%] py-10 scroll-mt-20 relative">
+
+
+      {result === "success" && (
+        <div className="fixed top-6 left-1/2 -translate-x-1/2 
+                        bg-gradient-to-r from-[#749DD0] to-[#eb98eb] 
+                        text-white px-6 py-3 rounded-xl shadow-lg 
+                        animate-bounce z-50">
+          Message envoyée avec succès 💌
+        </div>
+      )}
+
       <h4 className="text-center mb-2 text-lg font-Ovo">
         Connect with me
       </h4>
 
-      <h2 className="text-center text-5xl font-Ovo">
+      <h2
+        className="text-center text-5xl font-Ovo text-[#749DD0]"
+        data-aos="zoom-in-down"
+      >
         Get in touch
       </h2>
 
@@ -44,13 +44,17 @@ export default function Contact() {
       </p>
 
       <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
-        <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
+
+        <div className="grid md:grid-cols-2 gap-6 mt-10 mb-8">
+
           <input
             type="text"
             name="name"
             placeholder="Enter your name"
             required
-            className="flex-1 px-3 py-2 border border-gray-300 rounded-md"
+            className="px-4 py-3 border border-gray-300 rounded-lg
+                       focus:outline-none focus:ring-2 focus:ring-[#749DD0]
+                       focus:scale-105 transition-all duration-300"
           />
 
           <input
@@ -58,7 +62,9 @@ export default function Contact() {
             name="email"
             placeholder="Enter your email"
             required
-            className="flex-1 px-3 py-2 border border-gray-300 rounded-md"
+            className="px-4 py-3 border border-gray-300 rounded-lg
+                       focus:outline-none focus:ring-2 focus:ring-[#749DD0]
+                       focus:scale-105 transition-all duration-300"
           />
         </div>
 
@@ -67,17 +73,27 @@ export default function Contact() {
           name="message"
           placeholder="Enter your message"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-md mb-6"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg mb-6
+                     focus:outline-none focus:ring-2 focus:ring-[#749DD0]
+                     focus:scale-[1.02] transition-all duration-300"
         ></textarea>
 
         <button
           type="submit"
-          className="py-2 px-8 bg-black text-white rounded-full mx-auto block"
+          className="py-3 px-10 rounded-full mx-auto block text-white
+                     bg-gradient-to-r from-[#749DD0] to-[#eb98eb]
+                     hover:scale-105 hover:shadow-xl
+                     transition-all duration-300 cursor-pointer"
         >
           Submit now
         </button>
 
-        <p className="mt-4 text-center">{result}</p>
+        {result === "sending" && (
+          <p className="text-center mt-4 text-gray-500 animate-pulse">
+            Sending...
+          </p>
+        )}
+
       </form>
     </div>
   );

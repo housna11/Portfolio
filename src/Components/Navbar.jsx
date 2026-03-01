@@ -57,7 +57,7 @@ export default function Navbar() {
 
             <ul ref={navLinkRef} className="hidden md:flex flex-col md:flex-row items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent">
                 <li>
-                    <a className="hover:text-gray-500 dark:hover:text-gray-300 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#top">Home</a>
+                    <a className="hover:text-gray-500 dark:hover:text-gray-300 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#">Home</a>
                 </li>
                 <li>
                     <a className="hover:text-gray-500 dark:hover:text-gray-300 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#about">About me</a>

@@ -6,18 +6,19 @@ export default function Header() {
                 <span className="text-[#749DD0]">Hi!</span> I&apos;m Housna Fathi
                 <img src="/hand-icon.png" alt="" className="w-6 mb-1" />
             </h3>
-            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Developpeuse Web Full-Stack</h1>
+            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Full-Stack Web Developer</h1>
             {/* <p className="max-w-2xl mx-auto font-Ovo"></p> */}
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
                 <a href="#contact"
-                    className="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#749DD0] to-[#DA7D20] text-white flex items-center gap-2 dark:border-transparent">
-                    contact me <img src="/right-arrow-bold.png" alt="" className="w-4 text-white" />
+                    className="px-10 py-2.5  rounded-full bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white hover:scale-105 hover:shadow-xl
+                     transition-all duration-300 flex items-center gap-2 ">
+                    Contact me <img src="/right-arrow-bold.png" alt="" className="w-4 text-white" />
                 </a>
 
-                <a href="./assets/dev-icon.png" download
-                    className="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white">
-                    my resume <img src="/download-icon.png" alt="" className="w-4 dark:invert" />
+                <a href="/MonCV.pdf" download="MonCV.pdf"
+                    className="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white hover:scale-105 transition-transform duration-300">
+                    My resume <img src="/download-icon.png" alt="" className="w-4 dark:invert" />
                 </a>
             </div>
         </div>
