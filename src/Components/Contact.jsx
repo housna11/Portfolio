@@ -20,12 +20,7 @@ export default function Contact() {
 
 
       {result === "success" && (
-        <div className="fixed top-6 left-1/2 -translate-x-1/2 
-                        bg-gradient-to-r from-[#749DD0] to-[#eb98eb] 
-                        text-white px-6 py-3 rounded-xl shadow-lg 
-                        animate-bounce z-50">
-          Message envoyée avec succès 💌
-        </div>
+        <div className="fixed top-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white px-6 py-3 rounded-xl shadow-lg animate-bounce z-50">Message envoyée avec succès 💌</div>
       )}
 
       <h4 className="text-center mb-2 text-lg font-Ovo">
