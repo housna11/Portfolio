@@ -9,11 +9,11 @@ const projectsData = [
     technologies: ["Laravel", "MySQL"]
   },
   { 
-    name: "Portfolio Website", 
+    name: "Podcast-Finder", 
     description: "Responsive portfolio built with React and TailwindCSS.", 
-    image: "/portfolio.png", 
-    link: "#",
-    technologies: ["React", "TailwindCSS"]
+    image: "/podcast.jpg", 
+    link: "https://github.com/housna11/Podcast-Find-API",
+    technologies: ["Laravel", "MySQL"]
   },
   { 
     name: "Blog Platform", 
@@ -40,7 +40,7 @@ export default function ProjectsCarousel() {
   return (
     <div id="work" className="w-full px-[8%] py-16 text-center">
       <h4 className="text-lg text-gray-500 mb-2 font-Ovo">My Work</h4>
-      <h2 className="text-4xl md:text-5xl font-Ovo mb-10 text-[#749DD0]">
+      <h2 className="text-4xl md:text-5xl font-Ovo mb-10 text-[#749DD0]" data-aos="zoom-in-down">
         Projects I’ve Built
       </h2>
 

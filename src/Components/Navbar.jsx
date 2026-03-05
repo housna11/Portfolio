@@ -63,7 +63,7 @@ export default function Navbar() {
                     <a className="hover:text-gray-500 dark:hover:text-gray-300 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#about">About me</a>
                 </li>
                 <li>
-                    <a className="hover:text-gray-500 dark:hover:text-gray-300 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#services">Services</a>
+                    <a className="hover:text-gray-500 dark:hover:text-gray-300 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#education">Education</a>
                 </li>
                 <li>
                 <a className="hover:text-gray-500 dark:hover:text-gray-300 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#work">My Work</a>
