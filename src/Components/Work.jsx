@@ -4,13 +4,13 @@ const projectsData = [
   { 
     name: "WorkUnity", 
     description: "L’application WorkUnity est une plateforme web créée avec Laravel pour faciliter la gestion des informations du personnel.",
-    image: "/image.png", 
+    image: "/employes.png", 
     link: "https://github.com/housna11/Application-WorkUnity",
     technologies: ["Laravel", "MySQL"]
   },
   { 
     name: "Podcast-Finder", 
-    description: "Responsive portfolio built with React and TailwindCSS.", 
+    description: "RESTful API built with Laravel for discovering and managing podcasts, episodes, and hosts, with secure authentication and role-based access.", 
     image: "/podcast.jpg", 
     link: "https://github.com/housna11/Podcast-Find-API",
     technologies: ["Laravel", "MySQL"]

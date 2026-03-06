@@ -18,6 +18,10 @@ export default function About() {
         { name: 'laravel', icon: '/Laravel.png', },
         { name: 'php', icon: '/php.png', },
         { name: 'mysql', icon: '/mysql.png', },
+        { name: 'postman', icon: '/postman.png', },
+        { name: 'GitHub', icon: '/GitHub.png', },
+        { name: 'jira', icon: '/Jira.svg', },
+        { name: 'Git', icon: '/Git.png', },
         { name: 'figma', icon: '/figma.png', },
     ];
 

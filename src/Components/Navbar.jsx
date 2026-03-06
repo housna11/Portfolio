@@ -75,8 +75,8 @@ export default function Navbar() {
 
                 <div className="flex items-center gap-4">
                     <button onClick={toggleTheme}>
-                        <img src="./assets/moon_icon.png" alt="" className="w-5 dark:hidden" />
-                        <img src="./assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
+                        <img src="/send_icon.png" alt="" className="w-5 dark:hidden" />
+                        <img src="/sun_icon.png" alt="" className="w-5 hidden dark:block" />
                     </button>
 
                     <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
