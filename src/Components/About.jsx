@@ -15,12 +15,12 @@ export default function About() {
 }, []);
     const tools = [
         { name: 'reactjs', icon: '/reactjs.png', },
-        { name: 'laravel', icon: '/Laravel.png', },
+        { name: 'laravel', icon: '/laravel.png', },
         { name: 'php', icon: '/php.png', },
-        { name: 'mysql', icon: '/mysql.png', },
+        { name: 'mysql', icon: '/MySQL.png', },
         { name: 'postman', icon: '/postman.png', },
         { name: 'GitHub', icon: '/GitHub.png', },
-        { name: 'jira', icon: '/Jira.svg', },
+        { name: 'jira', icon: '/jira.jpeg', },
         { name: 'Git', icon: '/Git.png', },
         { name: 'figma', icon: '/figma.png', },
     ];

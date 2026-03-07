@@ -49,7 +49,7 @@ export default function ProjectsCarousel() {
         {/* Prev */}
         <button
           onClick={prev}
-          className="absolute left-0 z-20 w-12 h-12 rounded-full bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white text-xl font-bold flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300"
+          className="absolute left-0 z-20 w-12 h-12 rounded-full bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white text-xl font-bold flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 cursor-pointer"
         >
           &lt;
         </button>
@@ -110,6 +110,8 @@ export default function ProjectsCarousel() {
                     >
                       View Project
                     </a>
+
+                    
                   </div>
                 )}
               </div>
@@ -120,12 +122,25 @@ export default function ProjectsCarousel() {
         {/* Next */}
         <button
           onClick={next}
-          className="absolute right-0 z-20 w-12 h-12 rounded-full bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white text-xl font-bold flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300"
+          className="absolute right-0 z-20 w-12 h-12 rounded-full bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white text-xl font-bold flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 cursor-pointer"
         >
           &gt;
         </button>
 
       </div>
+
+      <div className="flex justify-center mt-10">
+  <a
+    href="https://github.com/housna11"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-8 py-3 rounded-full text-white 
+    bg-gradient-to-r from-[#749DD0] to-[#eb98eb]
+    hover:scale-105 hover:shadow-xl transition-all duration-300"
+  >
+    View more projects on GitHub
+  </a>
+</div>
     </div>
   );
 }
