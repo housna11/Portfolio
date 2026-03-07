@@ -130,17 +130,14 @@ export default function ProjectsCarousel() {
       </div>
 
       <div className="flex justify-center mt-10">
-  <a
-    href="https://github.com/housna11"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-8 py-3 rounded-full text-white 
-    bg-gradient-to-r from-[#749DD0] to-[#eb98eb]
-    hover:scale-105 hover:shadow-xl transition-all duration-300"
-  >
-    View more projects on GitHub
-  </a>
-</div>
+          <a
+            href="https://github.com/housna11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 rounded-full text-white bg-gradient-to-r from-[#749DD0] to-[#eb98eb] hover:scale-105 hover:shadow-xl transition-all duration-300">
+            View more projects on GitHub
+          </a>
+      </div>
     </div>
   );
 }
