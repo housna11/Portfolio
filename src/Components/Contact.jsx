@@ -40,7 +40,7 @@ export default function Contact() {
         Connect with me
       </h4>
 
-      <h2 className="text-center text-5xl font-Ovo text-[#749DD0]">
+      <h2 className="text-center text-5xl font-Outfit text-[#749DD0]" data-aos="zoom-in-down">
         Get in touch
       </h2>
 

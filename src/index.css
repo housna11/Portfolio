@@ -7,3 +7,12 @@
 .animate-spin_slow {
   animation: spin-slow 10s linear infinite;
 }
+body {
+  font-family: 'Inter', sans-serif;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+}
+body {
+  font-family: 'Ovo', serif;
+}

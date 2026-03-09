@@ -6,10 +6,10 @@ export default function Navbar() {
     const navLinkRef = useRef();
 
     const openMenu = () => {
-        sideMenuRef.current.style.transform = 'translateX(-16rem)';
+        sideMenuRef.current.style.right = "0";
     }
     const closeMenu = () => {
-        sideMenuRef.current.style.transform = 'translateX(16rem)';
+        sideMenuRef.current.style.right = "-16rem";
     }
     const toggleTheme = () => {
 
@@ -55,7 +55,7 @@ export default function Navbar() {
                     <img src="/housnaa.png" alt="Logo" className="w-30 cursor-pointer mr-14 dark:hidden" />
                 </a>
 
-            <ul ref={navLinkRef} className="hidden md:flex flex-col md:flex-row items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent">
+            <ul ref={navLinkRef} className="hidden md:flex flex-col md:flex-row items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Outfit dark:border dark:border-white/30 dark:bg-transparent">
                 <li>
                     <a className="hover:text-gray-500 dark:hover:text-gray-300 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#">Home</a>
                 </li>
@@ -79,24 +79,24 @@ export default function Navbar() {
                         <img src="/sun_icon.png" alt="" className="w-5 hidden dark:block" />
                     </button>
 
-                    <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
+                    {/* <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
                         Contact
                         <img src="/arrow-icon.png" alt="" className="w-3 dark:hidden" />
                         <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
-                    </a>
+                    </a> */}
 
                     <button className="block md:hidden ml-3" onClick={openMenu}>
-                        <img src="./assets/menu-black.png" alt="" className="w-6 dark:hidden" />
-                        <img src="./assets/menu-white.png" alt="" className="w-6 hidden dark:block" />
+                        <img src="/menu-black.png" alt="" className="w-6 dark:hidden" />
+                        <img src="/menu-white.png" alt="" className="w-6 hidden dark:block" />
                     </button>
 
                 </div>
                 {/* -- ----- mobile menu ------  -- */}
-                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed right-[-16rem] top-0 w-64 z-50 max-h-[90vh] overflow-y-auto bg-[#d3e3f7] transition-all duration-500 font-Ovo dark:bg-darkHover dark:text-white">
 
                     <div className="absolute right-6 top-6" onClick={closeMenu}>
-                        <img src="./assets/close-black.png" alt="" className="w-5 cursor-pointer dark:hidden" />
-                        <img src="./assets/close-white.png" alt="" className="w-5 cursor-pointer hidden dark:block" />
+                        <img src="/close-black.png" alt="" className="w-5 cursor-pointer dark:hidden" />
+                        <img src="/close-white.png" alt="" className="w-5 cursor-pointer hidden dark:block" />
                     </div>
 
                     <li><a href="#top" onClick={closeMenu}>Home</a></li>
