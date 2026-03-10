@@ -47,7 +47,7 @@ export default function About() {
     ];
     return (
         <div id="about" className="w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20">
-            {/* <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4> */}
+            <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
             <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-Outfit text-[#749DD0]" data-aos="zoom-in-down">About me</h2>
 
             <div className="flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-16">
@@ -68,7 +68,7 @@ export default function About() {
                         key={data.name}
                         data-aos="flip-left"
                         data-aos-duration="1000"
-                        className="border-r-4 border-[#749DD0] rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:bg-[#749DD0]/10 hover:-translate-y-1 hover:scale-105 dark:hover:shadow-white/80 dark:hover:bg-darkHover/50 transform transition duration-500 relative overflow-visible"
+                        className="border-r-4 border-[#749DD0] rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:bg-[#749DD0]/10 hover:-translate-y-1 hover:scale-105 active:bg-[#749DD0]/10 active:scale-95 dark:hover:shadow-white/80 dark:hover:bg-darkHover/50 dark:active:bg-darkHover/70 transform transition duration-500 relative overflow-visible"
                         >
                         <img src={data.icon1} alt="" className="w-7 mt-3 dark:hidden" />
                         <img src={data.icon2} alt="" className="w-7 mt-3 hidden dark:block" />

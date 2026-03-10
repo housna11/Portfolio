@@ -5,26 +5,25 @@ export default function Contact() {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("sending");
+  event.preventDefault();
+  setResult("sending");
 
-    emailjs
-      .sendForm(
-        "service_plddlz1", 
-        "template_pucgf3o", 
-        event.target,
-        "qY6oMZUzNHw5Yg8UI"
-      )
-      .then(
-        () => {
-          setResult("success");
-          event.target.reset();
-          setTimeout(() => setResult(""), 3000);
-        },
-        () => {
-          setResult("error");
-        }
-      );
+  try {
+    await emailjs.sendForm(
+      "service_5xh6ox6",
+      "template_o3dfwwd",
+      event.target,
+      "qY6oMZUzNHw5Yg8UI"
+    );
+
+    setResult("success");
+    event.target.reset();
+
+    setTimeout(() => setResult(""), 3000);
+  } catch (error) {
+    console.error(error);
+    setResult("error");
+  }
   };
 
   return (

@@ -92,7 +92,7 @@ export default function Navbar() {
 
                 </div>
                 {/* -- ----- mobile menu ------  -- */}
-                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed right-[-16rem] top-0 w-64 z-50 max-h-[90vh] overflow-y-auto bg-[#d3e3f7] transition-all duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+                <ul ref={sideMenuRef} className=" font-Outfit flex md:hidden flex-col gap-4 py-20 px-10 fixed right-[-16rem] top-0 w-64 z-50 max-h-[90vh] overflow-y-auto bg-[#d3e3f7] transition-all duration-500  dark:bg-darkHover dark:text-white">
 
                     <div className="absolute right-6 top-6" onClick={closeMenu}>
                         <img src="/close-black.png" alt="" className="w-5 cursor-pointer dark:hidden" />
