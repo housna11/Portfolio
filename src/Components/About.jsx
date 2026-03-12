@@ -20,7 +20,7 @@ export default function About() {
         { name: 'mysql', icon: '/MySQL.png', },
         { name: 'postman', icon: '/postman.png', },
         { name: 'GitHub', icon: '/GitHub.png', },
-        { name: 'jira', icon: '/jira.jpeg', },
+        { name: 'jira', icon: '/jira.png', },
         { name: 'Git', icon: '/Git.png', },
         { name: 'figma', icon: '/figma.png', },
     ];
@@ -77,7 +77,7 @@ export default function About() {
                         </li>
                         ))}
                     </ul>
-                    <h4 className="my-6 text-gray-700 font-Ovo dark:text-white">Tools i use</h4>
+                    <h4 className="my-6 text-gray-700 font-Ovo dark:text-white">Technologies & Tools I Use</h4>
 
                     <ul className="flex flex-wrap items-center gap-3 sm:gap-5">
                         {tools.map((tool) => (
