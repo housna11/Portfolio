@@ -3,21 +3,21 @@ import { useState } from "react";
 const projectsData = [
   { 
     name: "WorkUnity", 
-    description: "L’application WorkUnity est une plateforme web créée avec Laravel pour faciliter la gestion des informations du personnel.",
+    description: "WorkUnity is a web platform built with Laravel to simplify employee information management.",
     image: "/employes.png", 
     link: "https://github.com/housna11/Application-WorkUnity",
     technologies: ["Laravel", "MySQL"]
   },
   { 
-    name: "Podcast-Finder", 
-    description: "RESTful API built with Laravel for discovering and managing podcasts, episodes, and hosts, with secure authentication et roles.", 
+    name: "Podcast Finder API", 
+    description: "RESTful API built with Laravel for discovering and managing podcasts, episodes, and hosts, with secure authentication and role management.", 
     image: "/podcast.jpg", 
     link: "https://github.com/housna11/Podcast-Find-API",
     technologies: ["Laravel", "MySQL"]
   },
   { 
     name: "Daily Habits Tracker", 
-    description: "Application web pour suivre les routines quotidiennes et améliorer les habitudes, avec suivi individuel et du groupe.", 
+    description: "Web application for tracking daily routines and improving habits, with individual and group progress tracking.", 
     image: "/Daily.png", 
     link: "https://github.com/housna11/Daily-Habits-Tracker",
     technologies: ["React.js"]
@@ -38,7 +38,7 @@ export default function ProjectsCarousel() {
 
       <h4 className="text-lg mb-2 font-Ovo">My Work</h4>
 
-      <h2 className="text-3xl md:text-5xl font-Outfit mb-10 text-[#749DD0]">
+      <h2 className="text-3xl md:text-5xl font-Outfit mb-10 text-[#749DD0]" data-aos="zoom-in-down">
         Projects I’ve Built
       </h2>
 
