@@ -37,7 +37,7 @@ export default function Navbar() {
                     <img src="/housnaa.png" alt="Logo" className="w-30 cursor-pointer mr-14" />
                 </a>
 
-                <ul ref={navLinkRef} className="hidden md:flex flex-col md:flex-row items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Outfit">
+                <ul ref={navLinkRef} className="hidden md:flex flex-col md:flex-row items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Outfit hover:scale-105">
                     <li>
                         <a className="hover:text-gray-500 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#">Home</a>
                     </li>
@@ -46,6 +46,9 @@ export default function Navbar() {
                     </li>
                     <li>
                         <a className="hover:text-gray-500 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a className="hover:text-gray-500 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#experience">Experience</a>
                     </li>
                     <li>
                         <a className="hover:text-gray-500 transition relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-[#749DD0] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform" href="#work">My Work</a>
@@ -72,6 +75,7 @@ export default function Navbar() {
                     <li><a href="#top" onClick={closeMenu}>Home</a></li>
                     <li><a href="#about" onClick={closeMenu}>About me</a></li>
                     <li><a href="#education" onClick={closeMenu}>Education</a></li>
+                    <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
                     <li><a href="#work" onClick={closeMenu}>My Work</a></li>
                     <li><a href="#contact" onClick={closeMenu}>Contact me</a></li>
                 </ul>
