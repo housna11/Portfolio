@@ -107,7 +107,8 @@ export default function ProjectsCarousel() {
                         {project.technologies.map((tech, i) => (
                           <span
                             key={i}
-                            className="px-3 py-1 text-white rounded-full text-xs md:text-sm font-medium bg-gradient-to-r from-[#749DD0] to-[#eb98eb]"
+                            className="px-3 py-1 text-white rounded-full text-xs md:text-sm font-medium bg-gradient-to-r from-[#749DD0] to-[#eb98eb] transform transition-all duration-300 
+                          hover:scale-110 hover:shadow-lg"
                           >
                             {tech}
                           </span>

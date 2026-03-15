@@ -16,11 +16,11 @@ export default function About() {
     { name: 'React.js', icon: '/reactjs.png' },
     { name: 'Laravel', icon: '/laravel.png' },
     { name: 'PHP', icon: '/php.png' },
-    { name: 'MySQL', icon: '/MySQL.png' },
+    { name: 'MySQL', icon: '/mysql.png' },
     { name: 'Postman', icon: '/postman.png' },
-    { name: 'GitHub', icon: '/GitHub.png' },
+    { name: 'GitHub', icon: '/github.png' },
     { name: 'Jira', icon: '/jira.png' },
-    { name: 'Git', icon: '/Git.png' },
+    { name: 'Git', icon: '/git.png' },
     { name: 'Figma', icon: '/figma.png' },
   ];
 
