@@ -30,7 +30,7 @@ export default function Contact() {
     <div id="contact" className="w-full px-[12%] py-10 scroll-mt-20 relative">
 
       {result === "success" && (
-        <div className="fixed top-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white px-6 py-3 rounded-xl shadow-lg animate-bounce z-50">
+        <div className="fixed top-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white px-4 py-2 rounded-lg shadow-lg animate-bounce z-50 max-w-[90%] text-sm">
           Message envoyé avec succès 💌
         </div>
       )}

@@ -78,12 +78,15 @@ export default function About() {
 
           <h4 className="my-6 text-gray-700 font-Ovo">Technologies & Tools I Use</h4>
           <ul className="flex flex-wrap items-center gap-3 sm:gap-5">
-            {tools.map((tool) => (
-              <li key={tool.name} className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                <img src={tool.icon} alt={tool.name} className="w-5 sm:w-7" />
-              </li>
-            ))}
-          </ul>
+  {tools.map((tool) => (
+    <li
+      key={tool.name}
+      className="
+        flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 rounded-lg cursor-pointer transform transition duration-500 hover:-translate-y-1 hover:scale-105 hover:shadow-lg active:-translate-y-1 active:scale-105 active:shadow-lg">
+      <img src={tool.icon} alt={tool.name} className="w-5 sm:w-7" />
+    </li>
+  ))}
+</ul>
         </div>
       </div>
     </div>
