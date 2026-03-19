@@ -61,7 +61,7 @@ export default function ExperienceSection() {
             <div className="ml-10 md:ml-0 md:w-1/2 md:px-8">
 
               <div
-                className="bg-white rounded-3xl p-6 sm:p-8 transform transition-all duration-500 hover:scale-105"
+                className="bg-white rounded-3xl p-6 sm:p-8 transform transition-all duration-500 hover:scale-105 active:scale-105"
                 style={{
                   boxShadow:
                     "0 5px 15px rgba(116,157,208,0.5), 0 5px 25px rgba(235,152,235,0.35)"

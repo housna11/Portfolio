@@ -55,7 +55,7 @@ export default function Footer() {
                     rounded-full hover:scale-105 hover:shadow-xl transition-all duration-300 text-2xl">
                   <i className="fa-brands fa-linkedin"></i>
                 </span>
-                <span className="text-black dark:text-white text-sm hover:text-[#749DD0]">Housna Fathi</span>
+                <span className="text-black dark:text-white text-sm hover:text-[#749DD0] break-words">Housna Fathi</span>
               </a>
             </div>
           </div>
@@ -66,10 +66,13 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* Scroll-to-top button fixed */}
       <button
         onClick={scrollToTop}
-        className="fixed right-6 bottom-6 w-12 h-12 flex items-center justify-center bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white rounded-full shadow-lg hover:scale-110 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+        className="fixed right-6 bottom-6 w-12 h-12 flex items-center justify-center
+          bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white rounded-full shadow-lg 
+          hover:scale-110 hover:shadow-2xl transition-all duration-300 cursor-pointer
+          z-[1000] md:bottom-6" 
+      >
         <i className="fa-solid fa-arrow-up animate-bounce"></i>
       </button>
     </>

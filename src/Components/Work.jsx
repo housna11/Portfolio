@@ -2,17 +2,17 @@ import { useState } from "react";
 
 const projectsData = [
   { 
-    name: "WorkUnity", 
-    description: "WorkUnity is a web platform built with Laravel to simplify employee information management.",
-    image: "/employes.png", 
-    link: "https://github.com/housna11/Application-WorkUnity",
-    technologies: ["Laravel", "MySQL"]
-  },
-  { 
     name: "Podcast Finder API", 
     description: "RESTful API built with Laravel for discovering and managing podcasts, episodes, and hosts, with secure authentication and role management.", 
     image: "/podcast.jpg", 
     link: "https://github.com/housna11/Podcast-Find-API",
+    technologies: ["Laravel", "MySQL"]
+  },
+  { 
+    name: "WorkUnity", 
+    description: "WorkUnity is a web platform built with Laravel to simplify employee information management.",
+    image: "/employes.png", 
+    link: "https://github.com/housna11/Application-WorkUnity",
     technologies: ["Laravel", "MySQL"]
   },
   { 
@@ -107,9 +107,8 @@ export default function ProjectsCarousel() {
                         {project.technologies.map((tech, i) => (
                           <span
                             key={i}
-                            className="px-3 py-1 text-white rounded-full text-xs md:text-sm font-medium bg-gradient-to-r from-[#749DD0] to-[#eb98eb] transform transition-all duration-300 
-                          hover:scale-110 hover:shadow-lg"
-                          >
+                            className="
+                              px-3 py-1 text-white rounded-full text-xs md:text-sm font-medium bg-gradient-to-r from-[#749DD0] to-[#eb98eb] transform transition-all duration-300 hover:scale-110 hover:shadow-lg active:scale-110 active:shadow-lg focus:scale-110 focus:shadow-lg">
                             {tech}
                           </span>
                         ))}
@@ -118,10 +117,8 @@ export default function ProjectsCarousel() {
 
                       <a
                         href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block mt-4 text-[#749DD0] hover:underline"
-                      >
+                        target="_blank"rel="noopener noreferrer"className="block mt-4 text-[#749DD0] hover:underline">
+                        <i className="fa-brands fa-github"></i>
                         View Project
                       </a>
 

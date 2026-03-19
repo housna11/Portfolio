@@ -14,13 +14,13 @@ export default function About() {
 
   const tools = [
     { name: 'React.js', icon: '/reactjs.png' },
-    { name: 'Laravel', icon: '/laravel.png' },
+    { name: 'Laravel', icon: '/laravel.jpeg' },
     { name: 'PHP', icon: '/php.png' },
     { name: 'MySQL', icon: '/mysql.png' },
     { name: 'Postman', icon: '/postman.png' },
-    { name: 'GitHub', icon: '/github.png' },
+    { name: 'GitHub', icon: '/github.jpeg' },
     { name: 'Jira', icon: '/jira.png' },
-    { name: 'Git', icon: '/git.png' },
+    { name: 'Git', icon: '/git.jpeg' },
     { name: 'Figma', icon: '/figma.png' },
   ];
 
@@ -68,8 +68,7 @@ export default function About() {
                 key={item.name}
                 data-aos="flip-left"
                 data-aos-duration="1000"
-                className="border-r-4 border-[#749DD0] rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:bg-[#749DD0]/10 hover:-translate-y-1 hover:scale-105 active:bg-[#749DD0]/10 active:scale-95 transform transition duration-500 relative overflow-visible"
-              >
+                className="border-r-4 border-[#749DD0] rounded-xl p-6 cursor-pointer bg-[#749DD0]/10 md:bg-transparent hover:bg-[#749DD0]/10 hover:-translate-y-1 hover:scale-105 active:bg-[#749DD0]/10 active:scale-95 transform transition duration-500 relative overflow-visible">
                 <img src={item.icon} alt="" className="w-7 mt-3" />
                 <h3 className="my-4 font-semibold text-gray-700">{item.name}</h3>
                 <p className="text-gray-600 text-sm">{item.description}</p>
