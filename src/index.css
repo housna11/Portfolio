@@ -10,4 +10,9 @@
 
 body {
   font-family: 'Ovo', serif;
+
+}
+#root {
+  overflow-x: hidden;
+  position: relative;
 }
