@@ -43,7 +43,7 @@ export default function About() {
   ];
 
   return (
-    <div id="about" className="w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20">
+    <div id="about" className="w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20 ">
       <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
       <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-Outfit text-[#749DD0]" data-aos="zoom-in-down">About me</h2>
 
@@ -51,9 +51,18 @@ export default function About() {
         <div className="max-w-max mx-auto relative">
           <img src='/profil.jpg' alt="Profile" className="w-48 sm:w-80 rounded-3xl max-w-none" />
 
-          <div className="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
-            <img src="/dev.png" alt="Dev" className="w-full animate-spin_slow" />
-            <img src="/dev-icon.png" alt="Dev icon" className="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+          <div className="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full overflow-hidden translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+  
+            <img
+              src="/developer.png"
+              alt="Dev"
+              className="w-full h-full object-cover animate-spin_slow"/>
+
+            <img
+              src="/dev-icon.png"
+              alt="Dev icon"
+              className="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+
           </div>
         </div>
 
@@ -76,14 +85,17 @@ export default function About() {
             ))}
           </ul>
 
-          <h4 className="my-6 text-gray-700 font-Ovo">Technologies & Tools I Use</h4>
-          <ul className="flex flex-wrap items-center gap-3 sm:gap-5">
+        <h4 className="my-6 text-gray-700 font-Ovo">Technologies & Tools I Use</h4>
+<ul className="flex flex-wrap items-center gap-3 sm:gap-5">
   {tools.map((tool) => (
     <li
       key={tool.name}
-      className="
-        flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 rounded-lg cursor-pointer transform transition duration-500 hover:-translate-y-1 hover:scale-105 hover:shadow-lg active:-translate-y-1 active:scale-105 active:shadow-lg">
+      className="group relative flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 rounded-lg cursor-pointer transform transition duration-500 hover:-translate-y-1 hover:scale-105 hover:shadow-lg active:-translate-y-1 active:scale-105 active:shadow-lg">
       <img src={tool.icon} alt={tool.name} className="w-5 sm:w-7" />
+
+      <span className="absolute -bottom-6 text-[10px] sm:text-xs text-black font-medium text-center opacity-0 group-hover:opacity-100 group-active:opacity-100 transition duration-300">
+        {tool.name}
+      </span>
     </li>
   ))}
 </ul>

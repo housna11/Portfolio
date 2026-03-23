@@ -20,6 +20,7 @@ const projectsData = [
     description: "Web application for tracking daily routines and improving habits, with individual and group progress tracking.", 
     image: "/Daily.png", 
     link: "https://github.com/housna11/Daily-Habits-Tracker",
+    demo: "https://dailyhabitstracker.vercel.app",
     technologies: ["React.js"]
   },
 ];
@@ -28,17 +29,24 @@ export default function ProjectsCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const prev = () =>
-    setActiveIndex(prev => (prev === 0 ? projectsData.length - 1 : prev - 1));
+    setActiveIndex(prev =>
+      prev === 0 ? projectsData.length - 1 : prev - 1
+    );
 
   const next = () =>
-    setActiveIndex(prev => (prev === projectsData.length - 1 ? 0 : prev + 1));
+    setActiveIndex(prev =>
+      prev === projectsData.length - 1 ? 0 : prev + 1
+    );
 
   return (
     <div id="work" className="w-full px-4 md:px-[8%] py-16 text-center">
 
       <h4 className="text-lg mb-2 font-Ovo">My Work</h4>
 
-      <h2 className="text-3xl md:text-5xl font-Outfit mb-10 text-[#749DD0]" data-aos="zoom-in-down">
+      <h2
+        className=" text-center text-3xl sm:text-4xl lg:text-5xl font-Outfit mb-10 text-[#749DD0]"
+        data-aos="zoom-in-down"
+      >
         Projects I’ve Built
       </h2>
 
@@ -56,7 +64,6 @@ export default function ProjectsCarousel() {
         <div className="relative w-full h-[380px] md:h-[440px] flex items-center justify-center">
 
           {projectsData.map((project, index) => {
-
             const position = index - activeIndex;
 
             return (
@@ -66,21 +73,25 @@ export default function ProjectsCarousel() {
                 className="absolute transition-all duration-500 cursor-pointer"
                 style={{
                   transform: `
-                    translateX(${position * 90}px) 
+                    translateX(${position * 90}px)
                     scale(${index === activeIndex ? 1 : 0.82})
                   `,
-                  opacity: Math.abs(position) > 2 ? 0 : index === activeIndex ? 1 : 0.4,
+                  opacity:
+                    Math.abs(position) > 2
+                      ? 0
+                      : index === activeIndex
+                      ? 1
+                      : 0.4,
                   zIndex: 10 - Math.abs(position),
                 }}
               >
-
                 <div
                   className="w-64 sm:w-72 md:w-96 bg-white dark:bg-gray-900 overflow-hidden rounded-t-2xl rounded-b-xl"
                   style={{
-                    boxShadow: "0 5px 10px rgba(116,157,208,0.3), 0 5px 20px rgba(235,152,235,0.15)"
+                    boxShadow:
+                      "0 5px 10px rgba(116,157,208,0.3), 0 5px 20px rgba(235,152,235,0.15)",
                   }}
                 >
-
                   <img
                     src={project.image}
                     alt={project.name}
@@ -103,28 +114,42 @@ export default function ProjectsCarousel() {
                       </p>
 
                       <div className="flex justify-center gap-2 flex-wrap">
-
                         {project.technologies.map((tech, i) => (
                           <span
                             key={i}
-                            className="
-                              px-3 py-1 text-white rounded-full text-xs md:text-sm font-medium bg-gradient-to-r from-[#749DD0] to-[#eb98eb] transform transition-all duration-300 hover:scale-110 hover:shadow-lg active:scale-110 active:shadow-lg focus:scale-110 focus:shadow-lg">
+                            className="px-3 py-1 text-white rounded-full text-xs md:text-sm font-medium bg-gradient-to-r from-[#749DD0] to-[#eb98eb] transform transition-all duration-300 hover:scale-110 hover:shadow-lg active:scale-110 active:shadow-lg focus:scale-110 focus:shadow-lg"
+                          >
                             {tech}
                           </span>
                         ))}
+                      </div>
+
+                      <div className="flex justify-center gap-4 mt-4">
+
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#749DD0]"
+                        >
+                          <i className="fa-brands fa-github"></i> View Code
+                        </a>
+
+                        {project.demo && (
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#749DD0]"
+                          >
+                            🔵 Demo
+                          </a>
+                        )}
 
                       </div>
 
-                      <a
-                        href={project.link}
-                        target="_blank"rel="noopener noreferrer"className="block mt-4 text-[#749DD0] hover:underline">
-                        <i className="fa-brands fa-github"></i>
-                        View Project
-                      </a>
-
                     </div>
                   )}
-
                 </div>
               </div>
             );
@@ -142,7 +167,6 @@ export default function ProjectsCarousel() {
       </div>
 
       <div className="flex justify-center mt-10">
-
         <a
           href="https://github.com/housna11"
           target="_blank"
@@ -151,7 +175,6 @@ export default function ProjectsCarousel() {
         >
           View more projects on GitHub
         </a>
-
       </div>
 
     </div>

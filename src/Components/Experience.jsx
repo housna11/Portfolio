@@ -34,7 +34,7 @@ export default function ExperienceSection() {
       <h4 className="text-center text-lg mb-2 font-Ovo">Experience</h4>
 
       <h2
-        className="text-center text-3xl md:text-5xl font-Outfit mb-16 text-[#749DD0]"
+        className="text-center text-3xl sm:text-4xl lg:text-5xl font-Outfit mb-16 text-[#749DD0]"
         data-aos="zoom-in-down"
       >
         My Professional Experience
@@ -54,7 +54,6 @@ export default function ExperienceSection() {
             data-aos="fade-up"
           >
 
-            {/* dot */}
             <div className="absolute left-2 md:left-1/2 w-4 h-4 bg-[#749DD0] rounded-full border-4 border-white md:-translate-x-1/2"></div>
 
             {/* card */}

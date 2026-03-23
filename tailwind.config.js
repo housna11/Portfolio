@@ -15,7 +15,7 @@ export default {
         Ovo: ["Ovo", "serif"],
       },
       animation: {
-        spin_slow: 'spin 10s linear infinite', // slow spin
+        spin_slow: 'spin 10s linear infinite', 
       },
       colors: {
         lightHover: '#fcf4ff',

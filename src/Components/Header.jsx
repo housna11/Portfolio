@@ -1,22 +1,25 @@
 export default function Header() {
     return (
-        <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-            <img src="/DSC_93751 (1).jpg" alt="" className="rounded-full w-32" />
+        <div className="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center gap-4 pt-12 pb-12 md:pt-24 md:pb-24">
+            <img src="/DSC_93751 (1).jpg" alt="" className="rounded-full w-32 mt-14" />
+
             <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
                 <span className="text-[#749DD0]">Hi!</span> I&apos;m Housna Fathi
                 <img src="/hand-icon.png" alt="" className="w-6 mb-1" />
             </h3>
-            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Full-Stack Web Developer</h1>
-            {/* <p className="max-w-2xl mx-auto font-Ovo"></p> */}
+
+            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
+                Full-Stack Web Developer
+            </h1>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
                 <a href="#contact"
-                    className="px-10 py-2.5  rounded-full bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white hover:scale-105 hover:shadow-xl
-                     transition-all duration-300 flex items-center gap-2 ">
+                    className="px-10 py-2.5 rounded-full bg-gradient-to-r from-[#749DD0] to-[#eb98eb] text-white hover:scale-105 hover:shadow-xl transition-all duration-300 flex items-center gap-2">
                     Contact me <img src="/right-arrow-bold.png" alt="" className="w-4 text-white" />
                 </a>
 
-                <a href="/MonCV.pdf" download="MonCV.pdf"
+                <a href="/MonCV.pdf"
+                    download="MonCV.pdf"
                     className="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white hover:scale-105 transition-transform duration-300">
                     My resume <img src="/download-icon.png" alt="" className="w-4 dark:invert" />
                 </a>
