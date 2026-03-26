@@ -1,5 +1,8 @@
 # 🌐 Portfolio – Housna Fathi
 
+## 🔗 Live Demo
+[![View Portfolio](https://img.shields.io/badge/Live-Demo-749DD0?style=for-the-badge&logo=vercel&logoColor=white)](https://housnafathi.vercel.app)
+
 Portfolio professionnel développé avec **React.js, Vite et Tailwind CSS**.
 
 ---
@@ -16,17 +19,28 @@ Portfolio professionnel développé avec **React.js, Vite et Tailwind CSS**.
 - Présentation de mon profil
 - Objectif de carrière
 
+### 🎓 Section Education
+- Parcours académique
+- Diplômes et formations
+- Timeline éducative avec design moderne
+
+### 💼 Section Experience
+- Expériences professionnelles
+- Stages et missions réalisées
+- Détails des tâches et compétences acquises
+
 ### 🚀 Section Projets
 - Liste de projets réalisés
 - Description courte pour chaque projet
 - Cartes responsives et design moderne
 
 ### 📞 Section Contact
+- Formulaire de contact fonctionnel (EmailJS)
 - Adresse email
-- Liens vers LinkedIn et GitHub
 
 ### 📄 Footer
 - Copyright
+- Navigation rapide vers les sections du site
 - Liens vers mes réseaux professionnels
 
 ---
@@ -38,6 +52,8 @@ Le projet est basé sur une architecture modulaire avec des composants React :
 - Navbar.jsx
 - Header.jsx
 - About.jsx
+- Education.jsx
+- Experience.jsx
 - Work.jsx
 - Contact.jsx
 - Footer.jsx
@@ -54,4 +70,4 @@ Le but principal de ce portfolio est de **mettre en avant mes projets réalisés
 
 ## 👩‍💻 Réalisé par
 
-- **HOUSNA FATHI** – Développeuse web full-stack  
+- **HOUSNA FATHI** – Développeuse web Full-Stack

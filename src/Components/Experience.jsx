@@ -3,7 +3,7 @@ const experienceData = [
     company: "OCP",
     location: "Youssoufia",
     role: "PFE Intern – Desktop Application Development (C#)",
-    year: "March 2025 – April 2025",
+    year: "03/03/2025 – 30/04/2025",
     description: [
       "Designed and improved the user interface using WinForms.",
       "Developed database interactions with SQL Server (T-SQL, stored procedures).",
@@ -16,7 +16,7 @@ const experienceData = [
     company: "CMCP-International Paper",
     location: "Kénitra",
     role: "Application Support Intern",
-    year: "August 2024 – September 2024",
+    year: "01/08/2024 – 30/09/2024",
     description: [
       "Provided daily application support to ensure efficient technical assistance.",
       "Participated in incident analysis and resolution of software issues.",
