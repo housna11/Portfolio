@@ -3,7 +3,7 @@ const experienceData = [
     company: "OCP",
     location: "Youssoufia",
     role: "PFE Intern – Desktop Application Development (C#)",
-    year: "March 2025 – April 2025",
+    year: "03/03/2025 – 30/04/2025",
     description: [
       "Designed and improved the user interface using WinForms.",
       "Developed database interactions with SQL Server (T-SQL, stored procedures).",
@@ -16,7 +16,7 @@ const experienceData = [
     company: "CMCP-International Paper",
     location: "Kénitra",
     role: "Application Support Intern",
-    year: "August 2024 – September 2024",
+    year: "01/08/2024 – 30/09/2024",
     description: [
       "Provided daily application support to ensure efficient technical assistance.",
       "Participated in incident analysis and resolution of software issues.",
@@ -34,10 +34,8 @@ export default function ExperienceSection() {
       <h4 className="text-center text-lg mb-2 font-Ovo">Experience</h4>
 
       <h2
-        className="text-center text-3xl md:text-5xl font-Outfit mb-16 text-[#749DD0]"
-        data-aos="zoom-in-down"
-      >
-        My Professional Experience
+        className="text-center text-3xl sm:text-4xl lg:text-5xl font-Outfit mb-16 text-[#749DD0]"
+        data-aos="zoom-in-down">My Professional Experience
       </h2>
 
       <div className="relative max-w-5xl mx-auto">
@@ -54,7 +52,6 @@ export default function ExperienceSection() {
             data-aos="fade-up"
           >
 
-            {/* dot */}
             <div className="absolute left-2 md:left-1/2 w-4 h-4 bg-[#749DD0] rounded-full border-4 border-white md:-translate-x-1/2"></div>
 
             {/* card */}

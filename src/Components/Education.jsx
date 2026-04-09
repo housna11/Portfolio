@@ -2,7 +2,7 @@ const educationData = [
   {
     school: "Abouhayane Attaouhidi High School",
     degree: "High School Diploma (Baccalaureate)",
-    year: "2019 - 2022",
+    year: "2017 - 2018",
     description: "Humanities stream.",
     aos: "fade-down-right"
   },
@@ -26,7 +26,7 @@ export default function EducationSection() {
   return (
     <div id="education" className="w-full px-4 md:px-[8%] py-16 text-center">
       <h4 className="text-lg mb-2 font-Ovo">Education</h4>
-      <h2 className="text-3xl md:text-5xl font-Outfit mb-10 text-[#749DD0]" data-aos="zoom-in-down">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-Outfit mb-10 text-[#749DD0]" data-aos="zoom-in-down">
         My Education Journey
       </h2>
 
