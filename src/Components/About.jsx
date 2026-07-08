@@ -21,14 +21,15 @@ export default function About() {
     { name: 'GitHub', icon: '/github.jpeg' },
     { name: 'Jira', icon: '/jira.png' },
     { name: 'Git', icon: '/git.jpeg' },
+    { name: 'Docker', icon: '/docker.png' },
     { name: 'Figma', icon: '/figma.png' },
   ];
 
   const data = [
     {
-      name: 'Languages',
+      name: 'Skills',
       icon: '/code-icon.png',
-      description: 'HTML, CSS, JavaScript, React.js, PHP, Laravel',
+      description: 'HTML, CSS, JavaScript, TypeScript, React.js, Next.js, PHP, Laravel, Docker',
     },
     {
       name: 'Education',
@@ -38,7 +39,7 @@ export default function About() {
     {
       name: 'Projects',
       icon: '/project-icon.png',
-      description: 'I have developed more than 10 web projects',
+      description: 'Developed more than 10 web projects',
     },
   ];
 
