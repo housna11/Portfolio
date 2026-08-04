@@ -1,5 +1,19 @@
 const experienceData = [
   {
+    company: "GHM-LABS",
+    location: "Kenitra",
+    role: "Web Application Development Intern (Next.js / TypeScript)",
+    year: "04/04/2026 – 04/08/2026",
+    description: [
+      "Developed administrative modules.",
+      "Integrated and consumed REST APIs in collaboration with the Back-End team.",
+      "Executed and validated the application using Docker in a development environment.",
+      "Developed management modules for products, categories, attributes, users, roles, and permissions.",
+      "Implemented CRUD functionalities, including the management of product attributes, terms, and variations.",
+      "Participated in functional testing (QA) and validated data integration between REST APIs and the user interface."
+    ]
+  },
+  {
     company: "OCP",
     location: "Youssoufia",
     role: "PFE Intern – Desktop Application Development (C#)",
@@ -14,7 +28,7 @@ const experienceData = [
   },
   {
     company: "CMCP-International Paper",
-    location: "Kénitra",
+    location: "Kenitra",
     role: "Application Support Intern",
     year: "01/08/2024 – 30/09/2024",
     description: [
